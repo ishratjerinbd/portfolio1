@@ -107,16 +107,18 @@ export default function Header({
             
             <div className="h-4 w-px bg-zinc-200 dark:bg-zinc-800 mx-1"></div>
 
-            {/* Print/Save Resume Button */}
-            <button
-              onClick={() => window.print()}
+           {/* Print/Save Resume Button */}
+            <a
+              href="https://drive.google.com/file/d/1HTKul1QdGF27RqBXWYzs_tdjmJckkSPR/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-3.5 py-1.5 rounded-full border border-emerald-500/25 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-500/20 transition-all duration-200 cursor-pointer text-[10px] font-mono font-black tracking-widest flex items-center gap-1.5 uppercase shrink-0"
               aria-label="Download Resume"
               id="download-resume-btn"
             >
               <FileDown className="w-3.5 h-3.5" />
               <span>DOWNLOAD CV</span>
-            </button>
+            </a>
 
             <div className="h-4 w-px bg-zinc-200 dark:bg-zinc-800 mx-1"></div>
 
